@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assignment 1 - Part 2 Example</title>
     <!-- jQuery CDN -->
-    <script 
-        src="https://code.jquery.com/jquery-3.3.1.js" 
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous">
     </script>
@@ -19,16 +19,59 @@
 <body>
     <main class="main">
         <h1>Using ES6+ Methods</h1>
+        <p>The initial array is [1, 2, 3, 4], you can use the input box to add elements one by one.</p>
+        <p id="currentArray">The current array will show here after submit.</p>
         <section class="input-set">
-            <!-- Input -->
-            <input type="text" class="input">
-            <!-- Submit for Input -->
-            <input class="submit" type="submit"></input>
+            <h3>Reduce Function</h3>
+            <p>The reduce method will convert our array of numbers into a single value - the sum of all of the numbers.You can click the submit button to see the result.</p>
+            <div>
+              <!-- Input -->
+              <input type="text" class="input">
+              <!-- Submit for Input -->
+              <input class="submit" type="submit" id="reduce"></input>
+            </div>
             <!-- Result markup with hook for answer -->
             <p class="markup">My total with reduce is now: <span class="sum"></span></p>
         </section>
-       
-        
+        <hr>
+        <section class="input-set">
+            <h3>Filter Function</h3>
+            <p>The filter method will find out all the element that greater than 2.You can click the submit button to see the result.</p>
+            <div>
+              <!-- Input -->
+              <input type="text" class="input">
+              <!-- Submit for Input -->
+              <input class="submit" type="submit" id="filter"></input>
+            </div>
+            <!-- Result markup with hook for answer -->
+            <p class="markup">My result of filter is: <span class="filter-result"></span></p>
+        </section>
+        <hr>
+        <section class="input-set">
+            <h3>Find Function</h3>
+            <p>The find method will find out the first element that greater than 40.You can click the submit button to see the result.</p>
+            <div>
+              <!-- Input -->
+              <input type="text" class="input">
+              <!-- Submit for Input -->
+              <input class="submit" type="submit" id="find"></input>
+            </div>
+            <!-- Result markup with hook for answer -->
+            <p class="markup">My result of find the first element greater than 40 in new array is: <span class="find-result"></span></p>
+        </section>
+        <hr>
+        <section class="input-set">
+          <h3>Some Function</h3>
+          <p>The some method will find out if there are any element greater than 6.You can click the submit button to see the result.</p>
+            <div>
+              <!-- Input -->
+              <input type="text" class="input">
+              <!-- Submit for Input -->
+              <input class="submit" type="submit" id="some"></input>
+            </div>
+            <!-- Result markup with hook for answer -->
+            <p class="markup">Is there any element greater than 6 ？: <span class="some-result"></span></p>
+        </section>
     </main>
 </body>
 
