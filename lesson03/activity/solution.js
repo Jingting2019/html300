@@ -27,3 +27,11 @@ marty.pat();
 marty.pat();
 marty.pat();
 marty.pat();
+
+
+
+function bit() {
+	consol.log("dog is angry");
+}
+const barbar = new bit();
+ consol.log(barbar);
