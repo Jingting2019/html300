@@ -1,10 +1,11 @@
-
+//use http get to load local json file
 $.getJSON("data/data.json", function(cards){
   genHtml(cards);
 });
 
+// callBack function for generate components
 function genHtml(cards) {
-  let cardsHTML = cards.map(function(el) {
+  let cardsHTML = cards.map(el =>  {
     let card = `
     <article class="employee-card">
       <div class="left-container">
@@ -26,5 +27,7 @@ function genHtml(cards) {
     `;
     return card;
   });
+
+  //append the components to HTML
   $(".template-hook").append(cardsHTML);
 }
