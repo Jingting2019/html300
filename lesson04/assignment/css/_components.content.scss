@@ -1,0 +1,78 @@
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: lighten($black, 20%);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "montserrat", sans-serif;
+}
+
+.main {
+    padding: 2rem;
+}
+
+// creat three borders
+.loading {
+  @include preloading--size;
+  border-radius: 50%;
+  border-top: 10px solid $red;
+  position: relative;
+  animation: a1 2s linear infinite;
+}
+
+.loading::before, .loading::after {
+  content: '';
+  @include preloading--size;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  border-radius: 50%;
+}
+
+.loading::before {
+  border-top: 10px solid $green;
+  transform: rotate(120deg);
+}
+
+.loading::after {
+  border-top: 10px solid $blue;
+  transform: rotate(240deg);
+}
+
+// style the text
+.loading span {
+  position: absolute;
+  @include preloading--size;
+  color: $white;
+  text-align: center;
+  line-height: 200px;
+  animation: a2 2s linear infinite;
+}
+
+// Clockwise rotate the element
+@keyframes a1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//Counterclockwise rotate the element
+@keyframes a2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}

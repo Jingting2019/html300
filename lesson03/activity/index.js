@@ -1,29 +1,29 @@
-// Create the Dog class constructor
-class Dog {
-	// Give it expected parameters
-	constructor(name, age, breed, color) {
-		// Set those equal to the instance
-		this.name = name;
-		this.age = age;
-		this.breed = breed;
-		this.color = color;
-		this.energyLevel = 0;
-		this.barkLevel = 10;
-	}
-	// pat method
-	pat() {
-		this.energyLevel++
-		this.barkLevel--;
-		console.log(`This dog's name is ${this.name}, age is ${this.age}, current energy level is ${this.energyLevel} and current bark level is ${this.barkLevel}.`);
+
+// video
+class Video {
+	constructor(track, fileName, minutes) {
+		this.track = track;
+		this.fileName = fileName;
+		this.minutes = minutes;
 	}
 }
 
-// Create marty
-const marty = new Dog('Marty', 6, 'Mutt', 'Brown');
+class VideoPlayer {
 
-// Pat him 5 times
-marty.pat();
-marty.pat();
-marty.pat();
-marty.pat();
-marty.pat();
+	play(video) {
+		this.currVideo = video;
+		console.log(`Playing ${this.currVideo.fileName}`);
+	}
+	pause() {
+		console.log(`The video ${this.currVideo.fileName} is pause now.`);
+	}
+	playNext() {
+		let currTrack = this.track + 1;
+		console.log(`We are now playing track number: ${this.track}`);
+	}
+}
+
+const movieOne = new Video(1, 'Harry Potter', 60);
+const videoPlayer = new VideoPlayer();
+videoPlayer.play(movieOne);
+videoPlayer.pause();

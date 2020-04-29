@@ -1,17 +1,74 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:after,
 *:before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .main {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 h1 {
-    color: $red;  
+  color: $blue;
+  @include center-text;
+}
+//The employee card tile
+
+.employee-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 3px solid darken($gray, 15%);
+  max-width: 90%;
+  background-color: $gray;
+  padding: 3rem;
+  margin: auto;
+}
+
+//The left part of the card
+.left-container {
+  background-color: $white;
+
+  img {
+    border-radius: 50%;
+    max-width: 12rem;
+  }
+
+  h3 {
+    font-size: $fontsize-h3;
+    @include center-text;
+  }
+
+  p {
+    @include center-text;
+    font-style: italic;
+  }
+  @include set-padding;
+}
+
+//The right part of the card
+.right-container {
+  min-width: 60%;
+  background-color: $gray;
+  border: 50px solid $white;
+  @include set-padding;
+  align-content: center;
+
+  img {
+    display: inline;
+    position: relative;
+    top: 10px;
+  }
+
+  img~p {
+    display: inline;
+  }
+}
+
+.first-word {
+  font-weight: $fontweight-bold-light;
 }
