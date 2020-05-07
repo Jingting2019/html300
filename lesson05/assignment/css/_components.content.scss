@@ -13,6 +13,7 @@ html {
     font-family: Helvetica Neue;
 }
 
+// Give the container a grid layout
 .container {
   display: grid;
   width: 100%;
@@ -51,6 +52,7 @@ nav {
   }
 }
 
+// set the height of the line to align center the text
 aside {
   grid-area: side;
   align-self: center;
@@ -62,6 +64,7 @@ aside {
   }
 }
 
+// use flexbox to set the text to align center
 main {
   grid-area: main;
   display: flex;
