@@ -1,13 +1,22 @@
-html {
-    box-sizing: border-box;
+
+
+
+
+//background color
+.navbar-dark {
+  background-color: #512DA8;
 }
 
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
+.carousel {
+  background:#512DA8;
 }
 
-.main {
-    padding: 2rem;
+.img-fluid {
+  max-height: 350px;
+}
+
+//center the images
+.img-center {
+  margin-left:auto;
+  margin-right: auto;
 }
