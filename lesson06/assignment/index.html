@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 06 - Bootstrap 4</title>
-    </head>
-    <body>
-        <main class="main">
-          
-        </main>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="dependency/bootstrap.min.css">
+  <link rel="stylesheet" href="dependency/font-awesome.min.css">
+  <link rel="stylesheet" href="dependency/bootstrap-social.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+    <!--navbar-->
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#"> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./history.html"> History</a></li>
+          <li class="nav-item"><a class="nav-link" href="./desertification.html"> Desertification</a></li>
+          <li class="nav-item"><a class="nav-link" href="./recovery.html"> Recovery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- A Jumbotron-->
+  <header class="jumbotron">
+    <div class="container">
+      <h1 class="text-primary mt-5">Restoration of Mu Us Desert Ecosystems</h1>
+    </div>
+  </header>
+  <!--A carousel slider -->
+  <div class="container">
+      <div class="row row-content">
+        <div class="col">
+          <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img src="img/acient.png" alt="A green grass land." class="d-block img-fluid">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="mt-0">Acient Mu Us Desert  </h2>
+                  <p class="d-none d-sm-block">Mu Us Desert was not a desert, in the beginning, it was a big prairie thousand of years ago. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/begin.png" alt="yellow sand" class="d-block img-fluid">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="mt-0">The Bigining of A Desert <span class="badge badge-danger">START</span></h2>
+                  <p class="d-none d-sm-block">Mu Us Desert began to turn to the desert about 1200 years ago and became worse and worse. It gave people a lot of trouble not only in daily life but also in the whole ecosystem. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Beijing.png" alt="A bad sandstrom happened in Tiananmen Square" class="d-block img-fluid">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="mt-0">Sandstorm</h2>
+                  <h4>Beijing</h4>
+                  <p class="d-none d-sm-block">Without governance, such sandstorms would spread to Beijing, Shanghai, Tianjin, Nanjing, and even Japan. </p>
+                </div>
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#mycarousel" data-slide-to="1" class="active"></li>
+              <li data-target="#mycarousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <main class="main">
+    <!--A Tooltip -->
+    <div class="container mt-5">
+      <p>What did the explorer say when he found water in three different places in the desert?</p>
+      <button class="btn-success m-5" type="button" data-toggle="tooltip" data-placement="right" title="Well, well, well.">Hover here to see the answer</button>
+    </div>
+  </main>
+  <script src="dependency/jquery.slim.min.js"></script>
+  <script src="dependency/popper.min.js"></script>
+  <script src="dependency/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#mycarousel").carousel({interval: 3000});
+
+    });
+  </script>
+</body>
+
 </html>

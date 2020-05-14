@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="dependency/bootstrap.min.css">
+  <link rel="stylesheet" href="dependency/font-awesome.min.css">
+  <link rel="stylesheet" href="dependency/bootstrap-social.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html"> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./history.html"> History</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#"> Desertification</a></li>
+          <li class="nav-item"><a class="nav-link" href="./recovery.html"> Recovery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- A Jumbotron-->
+  <header class="jumbotron">
+    <div class="container">
+      <h1 class="text-primary mt-5">Restoration of Mu Us Desert Ecosystems</h1>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="text-center">Desertification</h1>
+    <div class="container">
+        <!--Accordion-->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" role="tab" id="beginhead">
+            <h5>
+              <a data-target="#begin" data-toggle="collapse">
+                Begin of Desertification
+              </a>
+            </h5>
+          </div>
+          <div id="begin" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              <p>Mu Us Desert began to turn to the desert about 1200 years ago and became worse and worse. It gave people a lot of trouble not only in daily life but also in the whole ecosystem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <h5>
+            <a data-target="#reason" data-toggle="collapse">
+              Reason of Desertification
+            </a>
+          </h5>
+        </div>
+        <div id="reason" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <p>On the one hand, the herdsmen's uncontrolled reclamation caused the problem, and on the other hand, the impact of inter-ethnic wars also made the problem worse.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <h5>
+            <a data-target="#result" data-toggle="collapse">
+              Result of Desertification
+            </a>
+          </h5>
+        </div>
+        <div id="result" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <p>All the traces of human activity destroyed nature enveriment. Finally, a small sandy land appeared in the Mu Us Desert area during the Tang Dynasty. Then, like infectious skin diseases, the sand expands little by little, the turf is bitterly swallowed little by little, people had no choice but to escape.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

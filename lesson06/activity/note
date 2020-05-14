@@ -1,0 +1,10 @@
+Found how to turn off tooltips here: https://stackoverflow.com/questions/13414244/turn-the-tooltip-bootstrap-functionality-off
+found that by googling “remove bootstrap tooltip using jquery”
+Here is my jQuery code for lesson 6 activity:
+$(submit).submit();
+$(submit).attr('disabled', true);
+
+$(clickme).click(function(){
+  $('#submit').removeAttr('disabled');
+  $('[data-toggle="tooltip"]').tooltip('disable');
+})

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+  <main class="main">
+    <h1 class="display-5 text-uppercase text-center">Activity</h1>
+    <p class="lead text-center">There are two buttons: "click me" and"submit".</p>
+    <div class="text-center">
+      <p class="d-inline">After click the "Click me" button, you will see the "submit" button turns</p>
+      <p class="d-inline bg-success">green</p>
+    </div>
+    <form>
+      <div class="form-group m-5 text-center">
+        <button class="btn btn-primary btn-lg m-2" id="click-button">click me</button>
+        <button class="btn btn-lg m-2" id="submit-button" type="button" data-toggle="tooltip" data-placement="right" title="click the other button" disabled>submit</button>
+      </div>
+    </form>
+  </main>
+  <script>
+    $(document).ready(function() {
+      $('#click-button').click(function() {
+        $('#submit-button').removeAttr('disabled')
+        $('#submit-button').addClass('btn-success')
+        $('#submit-button').removeAttr('title')
+      })
+      $("form").submit(function(e) {
+        e.preventDefault()
+      })
+    });
+  </script>
+</body>
+
+</html>
