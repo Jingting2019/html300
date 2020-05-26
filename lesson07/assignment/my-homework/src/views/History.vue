@@ -11,7 +11,7 @@
     data() {
       return {
         // Vue require me create an assets folder in public folder. I could not use the path under the src folder
-        pictures: ['/assets/acient.png', '/assets/hourses.png', '/assets/begin.png', '/assets/grown.png'],
+        pictures: ['./assets/acient.png', './assets/hourses.png', './assets/begin.png', './assets/grown.png'],
       }
     }
   }
